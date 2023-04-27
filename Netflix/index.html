@@ -28,7 +28,7 @@
                         <option value="portugues">Portugues</option> 
                         <option value="ingles">Inglês</option>
                     </select>
-                    <a href="https://www.netflix.com/br/login" id="login-button">Entrar </a>
+                    <a href="https://www.netflix.com/br/login" id="login-button">Entrar</a>
                 </div> 
             </nav>
             <div class="hero-description">
@@ -54,7 +54,7 @@
                  </p>    
             </div> 
             <div>
-                <img src="images/tv.png" alt="TV">
+                <img src="images/tv.png" alt="TV" class="tv-image">
                 <div class="preview-video" id="orientation-tv-video">
                     <video playsunline muted autoplay loop>
                         <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v">
@@ -62,7 +62,7 @@
             </div> 
         </div>
         </section>
-        <section class="grid-container  beneficios-content">
+        <section class="grid-container  beneficios-content  reverse-content" >
             <div>
                 <img src="images/devices.png" alt="dispositivos" class="devices-image">
                 <div class="preview-video" id="orientation-devices-video">
@@ -86,12 +86,12 @@
                 </p>
             </div>
             <div>
-                <img src="images/desenho.png" alt="Desenho">       
+                <img src="images/desenho.png" alt="Desenho" class="desenho-image">       
             </div>
         </section>
-        <section class="grid-container  beneficios-content">
+        <section class="grid-container  beneficios-content reverse-content">
             <figure>
-                <img src="images/celular.jpg" alt="Dispositivo móvel">
+                <img src="images/celular.jpg" alt="Dispositivo móvel" class="phone-image">
                 <figcaption id="card-device">
                     <img src="images/stranger-things.png"
                          alt="Stranger things">
@@ -99,7 +99,7 @@
                 <h5>Stranger Things</h5>
                 <p>Download em andamento...</p>
             </div>
-            <span class="animação"></span>             
+            <span class="animation"></span>             
                 </figcaption>
             </figure>
             <div>
@@ -107,37 +107,67 @@
                 <p>Disponíveis somente em planos sem anúncios.</p>
             </div>
         </section>
-        <section>
+        <section class="grid-container questions-section">
             <h2>Perguntas frequentes</h2>
             <ul>
                 <li>
-                    <button>O que é  a Netflix</button>
-                    <p>A Netflix é um serviço de streaming que oferece uma ampla
-                         variedade de séries, filmes e documentários premiados em 
-                         milhares de aparelhos conectados à internet.
-                        Você pode assistir a quantos filmes e séries quiser, quando e onde 
-                        quiser – tudo por um preço mensal acessível. Aqui você sempre encontra 
-                        novidades. A cada semana, adicionamos novas séries e filmes.
-                    <a href="#">Saiba mais</a> </p>
+                    <details> 
+                        <summary>
+                            <span>O que é netflix</span>
+                            <span>+</span>
+                         </summary>
+                    <div> 
+                         <p>A Netflix é um serviço de streaming que oferece uma ampla
+                             variedade de séries, filmes e documentários premiados em 
+                              milhares de aparelhos conectados à internet.
+                             Você pode assistir a quantos filmes e séries quiser, quando e onde 
+                              quiser – tudo por um preço mensal acessível. Aqui você sempre encontra 
+                             novidades. A cada semana, adicionamos novas séries e filmes.
+                             <a href="#">Saiba mais</a> 
+                         </p>
+                    </div>
+                    </details>
                 </li>
                 <li>
-                    <button> Quanto custa a Netflix?</button>
-                    <p> Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho 
-                        de streaming por uma taxa mensal única. Os planos variam de R$18,90 a R$55,90 por
-                         mês. Sem contrato nem taxas extras.</p>
+                    <details> 
+                         <summary>
+                            <span>Quanto custa á Netflix?</span>
+                            <span>+</span>
+                          </summary>
+                    <div> 
+                         <p> Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho 
+                             de streaming por uma taxa mensal única. Os planos variam de R$18,90 a R$55,90 por
+                            mês. Sem contrato nem taxas extras.
+                        </p>
+                    </div>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                         <summary> 
+                             <span> Quais são as diferenças de um plano com anúncios?</span>
+                             <span>+</span>
+                          </summary>
+                    <div> 
+                         <p>A Netflix é um serviço de streaming que oferece uma ampla
+                             variedade de séries, filmes e documentários premiados
+                             em milhares de aparelhos conectados à internet.
+                         </p>
+                    </div>
+                    </details>
                 </li>
             </ul>
             <form>
                 <p>Quer assistir? Informe seu email para 
                     criar ou reiniciar sua assinatura.</p>
-                <label for="email">Email</label>
+                <label for="email" id="label-email">Email</label>
                 <input type="email"name="email" id="email">
-                <input type="submit"value="Vamos lá >">
+                <input type="submit"value="Vamos lá >" class="btn-assinar">
             </form>
         </section>
         <footer>
             <p>Dúvidas? Ligue <a href="#">0800 591 8942</a></p>
-            <div>
+            <div id="footer-links">
                 <ul>
                     <li>
                         <a href="https://help.netflix.com/pt/node/412">
@@ -236,10 +266,11 @@
                 </ul>
                 </ul>
             </div>
-            <select name="idioma">
+            <select name="idioma" class="select-indioma">
                 <option value="portugues">Portugues</option>
-                <option value="ingles">Inglês</option>
+                <option value="ingles">English</option>
             </select>
+            <p>Netflix Brasil</p>
         </footer>
     </body>
 </html>
